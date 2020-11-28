@@ -19,7 +19,8 @@ try{
 rs.next();
 if(rs.getString("password").equals(password)
 {
-out.println("Welcome " +Admin);
+//out.println("Welcome " +Admin);
+response.sendRedirect("adminHome.html");
 }
 else{
 out.println("Invalid password.");
