@@ -19,7 +19,8 @@ try{
 rs.next();
 if(rs.getString("password").equals(password)&&rs.getString("userid").equals(userid))
 {
-out.println("Welcome " +userid);
+//out.println("Welcome " +userid);
+ response.sendRedirect("clientHome.html");
 }
 else{
 out.println("Invalid password or username.");
