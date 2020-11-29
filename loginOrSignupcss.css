@@ -33,3 +33,15 @@ cursor: pointer;
 .box input[type="submit"]:hover{
 background:#2ecc71;
 }
+.box a:link,.box a:visited {
+  background-color:#3498db;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.box a:hover,.box a:active {
+  background-color:#2ecc71;
+}
