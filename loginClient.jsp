@@ -1,32 +1,18 @@
-<%-- 
-    Document   : loginClient
-    Created on : Nov 27, 2020, 11:54:54 AM
-    Author     : SriGoutam J
---%>
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-pageEncoding="ISO-8859-1"%>
-<%@page import="java.sql.*,java.util.*"%>
-<%
-String userid=request.getParameter("email");
-session.putValue("email",email);
-String password=request.getParameter("password");
-Class.forName("com.mysql.jdbc.Driver");
-java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/clients","root","mysql");
-Statement st= con.createStatement();
-ResultSet rs=st.executeQuery("select * from users where email='"+email+"' and password='"+password+"'");
-try{
-rs.next();
-if(rs.getString("password").equals(password)&&rs.getString("email").equals(enail))
-{
-//out.println("Welcome " +email);
- response.sendRedirect("clientHome.html");
-}
-else{
-out.println("Invalid password or username.");
-}
-}
-catch (Exception e) {
-e.printStackTrace();
-}
-%>
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<link rel="stylesheet" href="loginClientcss.css">
+</head>
+<body bgcolor="e6e6e6">
+	<form class="box" action="loginClientservlet" method="post">	
+	<h1>Login</h1>
+	<input type="text" name="email" placeholder="E-mail">
+	<input type="password" name="password" placeholder="Password">
+	<input type="submit" value="login">
+	</form>
+</body>
+</html>
