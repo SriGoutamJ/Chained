@@ -27,7 +27,7 @@ public class LoginDao {
 		//Statement st= con.createStatement();
 		//ResultSet rs=st.executeQuery(sql);
 		
-		PreparedStatement st=con.prepareStatement("select * from login where username = ? and password = ? "); 
+		PreparedStatement st=con.prepareStatement("select * from login where email = ? and password = ? "); 
 		ResultSet rs=st.executeQuery();
 		st.setString(1, Email);
         		st.setString(2, Password);
