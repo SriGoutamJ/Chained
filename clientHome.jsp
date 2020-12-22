@@ -100,7 +100,7 @@ body, html {
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"></i>ORDER </a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small">   
       <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>HISTORY</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
+    <a href="ProductCategory.jsp" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
     <form class="w3-bar-item w3-button w3-hide-small" action="logoutClientservlet">
 	<input type="submit" value=LOGOUT></form>> 
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
