@@ -40,7 +40,22 @@ h1  {color: white;
   max-width: 500px;
 }
             
-  
+<!-- table css-->
+table{
+ width:90%;
+ 
+ }
+
+td{
+ width:33%;
+ padding:50px;
+}
+
+.center{
+margin-left:auto;
+margin-right:auto;
+}
+            
 .center {
   margin: auto;
   width: 50%;
