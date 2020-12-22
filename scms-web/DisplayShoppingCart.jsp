@@ -9,12 +9,60 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cart</title>
+        <style>
+            
+input[type="submit"]{
+border:0;
+background:none;
+display:block;
+margin:20px auto;
+text-align: center;
+border: 2px solid #2ecc71;
+padding: 14px 40px;
+outline:none;
+color:white;
+border-radius: 24px;
+transition: 0.25s;
+cursor: pointer;
+}
+            
+input[type="submit"]:hover{
+background:#2ecc71;
+}
+
+h1  {color: white;
+     background-color: #555555;
+     text-align: left;
+   padding: 2px;}
+
+.wrapper {
+  margin: 1em;
+  max-width: 500px;
+}
+            
+  
+.center {
+  margin: auto;
+  width: 50%;
+ 
+  padding: 10px;
+}
+            
+        </style>    
     </head>
     <body>
        <%-- Show the header with the shopping cart image --%>
-<table border="0">
-<tr><td><td><h1>Shopping Cart</h1>
-</table>
+<div class="center">
+  
+<div class="wrapper">
+  
+ <br><br><br><br>
+<h1>  <center>
+   Shopping Cart
+  </center></h1>
+
+</div>
+</div>
 
 <%
 // Get the current shopping cart from the user's session.
@@ -40,7 +88,7 @@
 %>
 <%-- Display the header for the shopping cart table --%>
 <br>
-<table border=4>
+<table border=0>
     <tr><th>Product</th><th>Description</th><th>Quantity</th><th>Price</th><th>Order Price</th><th>Action</th></tr>
 <%
         double orderprice = 0.0;
