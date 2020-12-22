@@ -14,7 +14,7 @@
         <title>Confirmation</title>
     </head>
     <body>
-    <table border="4">
+    <table border="0">
         <tr><th>Product</th><th>Description</th><th>Quantity</th><th>Price</th><th>Order Price</th></tr>
 <%  
           
@@ -73,18 +73,18 @@
 
     <br>
     <br>
-               Details:
-               <br>
-                Name:<%=details.getName()%>
+        <h2>Details:</h2>
+               <br><br>
+        <h3>Name:</h3><%=details.getName()%>
                 <br>
-                Address:<%=details.getAddress()%>
+        <h3>Address:</h3><%=details.getAddress()%>
            
                <br> 
-               City:<%=details.getCity()%>
+       <h3>City:</h3><%=details.getCity()%>
                <br>
-                Email:<%=details.getEmail()%>
+        <h3>Email:</h3><%=details.getEmail()%>
                <br>
-                Contact no.:<%=details.getContact_no()%>
+        <h3>Contact no.:</h3><%=details.getContact_no()%>
                 
                 <br>
                <form action="checkout" method="get">
