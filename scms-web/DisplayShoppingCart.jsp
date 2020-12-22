@@ -39,22 +39,7 @@ h1  {color: white;
   margin: 1em;
   max-width: 500px;
 }
-            
-<!-- table css-->
-table{
- width:90%;
- 
- }
-
-td{
- width:33%;
- padding:50px;
-}
-
-.center{
-margin-left:auto;
-margin-right:auto;
-}
+           
             
 .center {
   margin: auto;
