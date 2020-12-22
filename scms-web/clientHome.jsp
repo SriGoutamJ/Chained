@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Andika New Basic', sans-serif;}
 body, html {
   height: 100%;
   background-color:#e8e8e8;
@@ -43,6 +43,7 @@ body, html {
   color: black;
   background-size: 50px;
   line-height: 2;
+  
 }
 
 /* Create a Parallax Effect */
@@ -67,7 +68,10 @@ body, html {
 </style>
 </head>
 <body bgcolor = black >
-	<%
+	
+
+
+<%
 		response.setHeader("cache-control","no-cache,no-store,must-revalidate");
 	
 		if(session.getAttribute("email")==null)
@@ -86,9 +90,6 @@ body, html {
 
 
 
-
-
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
@@ -96,16 +97,13 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button"> </i>HOME</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small">  ABOUT US</a>
+  	<a href="#Aboutus" class="w3-bar-item w3-button w3-hide-small">ABOUT US</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"></i>ORDER </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small">   
-      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>HISTORY</a>
-    <a href="ProductCategory.jsp" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
+    <a href="#History" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>HISTORY</a>
+    <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
     <form class="w3-bar-item w3-button w3-hide-small" action="logoutClientservlet">
-	<input type="submit" value=LOGOUT></form>> 
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-     
-    </a>
+	<input type="submit" value=LOGOUT></form>
+    
 
 <br>
 
@@ -200,7 +198,7 @@ body, html {
   
 
 
-
+<!-- ELECTRONICS -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">ELECTRONICS</span></span>
@@ -213,9 +211,9 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="iphones.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" Apple iPhone 12 Pro Max 256 GB, Pacific Blue ">
+      <img src="iphones.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Intel 9th Gen Core i3/4GB RAM/ 1TB HDD/DOS/Black">
 
-      <a href="#home" class="w3-bar-item w3-button">iPhone 12 Pro Max</i></a>
+      <a href="#home" class="w3-bar-item w3-button">Lenovo V530s Tower Desktop</i></a>
     </div>
 
 
@@ -224,17 +222,17 @@ body, html {
     
 
     <div class="w3-col m3">
-      <img src="oneplus.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ONEPLUS 108 cm (43 inch) Full HD Smart LED TV, 43Y1 ">
+      <img src="Honor 9A" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Phantom Blue, 3GB RAM, 64GB Storage">
 
-      <a href="#home" class="w3-bar-item w3-button">OnePlus TV</i></a>
+      <a href="#home" class="w3-bar-item w3-button">Honor 9A</i></a>
     </div>
 
 
 
     <div class="w3-col m3">
-      <img src="hplap.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="HP 15-DA3001TU Laptop (10th Gen Intel Core i3-1005G1/4GB/1TB HDD/Intel UHD Graphics/Windows 10/MSO/FHD), 39.6 cm (15.6 inch)">
+      <img src="TP-Link Deco E4 Whole Home Mesh Wi-Fi System.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Seamless Roaming(AC1200), Work with Amazon Echo/Alexa and Parent Control Router">
 
-      <a href="#home" class="w3-bar-item w3-button">HP laptop</i></a>
+      <a href="#home" class="w3-bar-item w3-button">TP-Link Wi-Fi System</i></a>
     </div>
 
 
@@ -268,10 +266,10 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   
 
-
+<!-- FASHION --!>
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">FASHION</span> TOYS  FURNITURES </span> 
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">CLOTHING</span></span> 
   </div>
 </div>
 
@@ -287,9 +285,9 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="pant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" Men Fashion pant ">
+      <img src="pant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fit Type: Slim,Fabric: Cotton,Lycra Styling">
 
-      <a href="#home" class="w3-bar-item w3-button">Men pant</i></a>
+      <a href="#home" class="w3-bar-item w3-button">Fashion Men's Jeans</i></a>
     </div>
 
 
@@ -298,17 +296,17 @@ body, html {
     
 
     <div class="w3-col m3">
-      <img src="toys.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Durable Tupperware ">
+      <img src="toys.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Care Instructions: Machine Wash,Fit Type: Skinny Zip fly with button closure">
 
-      <a href="#home" class="w3-bar-item w3-button">Mickey toy</a>
+      <a href="#home" class="w3-bar-item w3-button">Inkast Denim Co.Jeans</a>
     </div>
 
 
 
     <div class="w3-col m3">
-      <img src="bed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" bed">
+      <img src="bed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fit Type: Regular Fit Fabric: 100% Cotton Style: Hooded Neck Style: Hood">
 
-      <a href="#home" class="w3-bar-item w3-button">Bed</a>
+      <a href="#home" class="w3-bar-item w3-button">Fenoix Men's T-Shirt</a>
     </div>
 
 
@@ -316,9 +314,9 @@ body, html {
 
 
     <div class="w3-col m3">
-      <img src="handbag.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="handbag">
+      <img src="handbag.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Closure: Lace-Up Shoe Width: Medium Material - Patent Leather">
 
-      <a href="#home" class="w3-bar-item w3-button">Hand Bag</a>
+      <a href="#home" class="w3-bar-item w3-button">Shozie Formal Shoes</a>
     </div>
 
 
@@ -347,7 +345,7 @@ body, html {
 
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">HOUSEHOLD</span> SUPPLIES</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">FURNITURE</span></span>
   </div>
 </div>
 
@@ -355,13 +353,13 @@ body, html {
 
 
 
-
+<!-- Furniture  -->
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="clock.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" Disney Clock ">
+      <img src="clock.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Product Dimensions: Length (209 cm) ,Width (159.6 cm) ,Height (90.3 cm). Bed size: Queen">
 
-      <a href="#home" class="w3-bar-item w3-button">Italian clock</i></a>
+      <a href="#home" class="w3-bar-item w3-button">Riva Queen Bed</i></a>
     </div>
 
 
@@ -370,17 +368,17 @@ body, html {
     
 
     <div class="w3-col m3">
-      <img src="tupperware.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Durable Tupperware ">
+      <img src="tupperware.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Product Dimensions: Length (212.8 cm) ,Width (165 cm) ,Height (93 cm)">
 
-      <a href="#home" class="w3-bar-item w3-button">Tupperware</i></a>
+      <a href="#home" class="w3-bar-item w3-button">Spacewood Queen Size Bed</i></a>
     </div>
 
 
 
     <div class="w3-col m3">
-      <img src="vase.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" Cycle Flower Vase">
+      <img src="vase.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Product dimension in cm Package 1 = Length (180) Breadth (81.28)height (71.12) sitting height (40.64)">
 
-      <a href="#home" class="w3-bar-item w3-button">Flower vase</i></a>
+      <a href="#home" class="w3-bar-item w3-button">Adorn Sofa Gery)</i></a>
     </div>
 
 
@@ -388,9 +386,9 @@ body, html {
 
 
     <div class="w3-col m3">
-      <img src="plant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Artificial Plant">
+      <img src="plant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Primary Material: Wood, secondary material :Foam Upholstery Material: Fabric : color : Blue & Black;Easy to use.">
 
-      <a href="#home" class="w3-bar-item w3-button">Indoor Plant</i></a>
+      <a href="#home" class="w3-bar-item w3-button">adorn three seater </i></a>
     </div>
 
 
