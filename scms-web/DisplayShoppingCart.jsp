@@ -1,7 +1,9 @@
 
 
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page language="java" import="Api.*,java.util.*,java.text.*" %>
+<%@ page language="java" import="conceptTrials.*,java.util.*,java.text.*" %>
 
 
 <!DOCTYPE html>
@@ -20,7 +22,7 @@ text-align: center;
 border: 2px solid #2ecc71;
 padding: 14px 40px;
 outline:none;
-color:white;
+color:black;
 border-radius: 24px;
 transition: 0.25s;
 cursor: pointer;
@@ -36,7 +38,7 @@ h1  {color: white;
    padding: 2px;}
 
 .wrapper {
-  margin: 1em;
+  margin: auto auto;
   max-width: 500px;
 }
            
@@ -47,19 +49,31 @@ h1  {color: white;
  
   padding: 10px;
 }
-            
+    
+table{
+width:100%;
+border-collapse: collapse;
+}        
+
+th , td{
+padding:15px;
+text-align:center;
+}            
+
+tr:nth-child(even) {background-color: #f2f2f2;}
         </style>    
     </head>
-    <body>
+    <body bgcolor=#e6e6e6>
        <%-- Show the header with the shopping cart image --%>
 <div class="center">
   
 <div class="wrapper">
   
  <br><br><br><br>
-<h1>  <center>
+<h1> <center>
    Shopping Cart
-  </center></h1>
+   </center>
+  </h1>
 
 </div>
 </div>
@@ -88,8 +102,8 @@ h1  {color: white;
 %>
 <%-- Display the header for the shopping cart table --%>
 <br>
-<table border=0>
-    <tr><th>Product</th><th>Description</th><th>Quantity</th><th>Price</th><th>Order Price</th><th>Action</th></tr>
+<table border=1>
+    <tr><th><h3>Product</h3></th><th><h3>Description</h3></th><th><h3>Quantity</h3></th><th><h3>Price</h3></th><th><h3>Order Price</h3></th><th><h3>Action</h3></th></tr>
 <%
         double orderprice = 0.0;
         double total = 0.0;
@@ -124,10 +138,12 @@ h1  {color: white;
  
 %>
 </table>
+<br>
 <%
-             out.print("Total price:");
+             out.print("<h3>Total price: ");
              out.print(currency.format(total));
 %>
+</h3>
 <br>
 <form action="Continue" method = "post">
        <input type="submit" value="Place order">
