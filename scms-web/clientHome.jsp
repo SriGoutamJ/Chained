@@ -71,7 +71,9 @@ body, html {
 	
 
 
-<%
+
+	<!--Logout cache clearance-->
+	<%
 		response.setHeader("cache-control","no-cache,no-store,must-revalidate");
 	
 		if(session.getAttribute("email")==null)
@@ -79,12 +81,6 @@ body, html {
 			response.sendRedirect("loginClient.jsp");
 		}
 	%>
-
-
-
-
-
-
 
 
 
@@ -103,30 +99,19 @@ body, html {
     <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
     <form class="w3-bar-item w3-button w3-hide-small" action="logoutClientservlet">
 	<input type="submit" value=LOGOUT></form>
-    
+ </div>
 
 <br>
+<br>
+<br>
 
-  </div>
-
-
-  <br>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
 
 <!-- First Parallax Image with Logo Text -->
 
-
-<br>
-
-
+	
+	
+	
+<!--Carousel-->	
 <div class="container-lg my-3">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->
@@ -139,13 +124,13 @@ body, html {
         <br>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="template6.jpg" alt="First Slide" style="width:1100px;height:700px;">
+                <img src="template6.jpg" alt="First Slide" style="width:1100px;height:700px;"><!--Image 1-->
             </div>
             <div class="carousel-item">
-                <img src="template3.jpg" alt="Second Slide"style="width:1100px;height:700px;">
+                <img src="template3.jpg" alt="Second Slide"style="width:1100px;height:700px;"><!--Image 2-->
             </div>
             <div class="carousel-item">
-                <img src="template7.png" alt="Third Slide"style="width:1100px;height:700px;">
+                <img src="template7.png" alt="Third Slide"style="width:1100px;height:700px;"><!--Image 3-->
             </div>
         </div>
         <!-- Carousel controls -->
@@ -157,25 +142,6 @@ body, html {
         </a>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -213,7 +179,7 @@ body, html {
     <div class="w3-col m3">
       <img src="iphones.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Intel 9th Gen Core i3/4GB RAM/ 1TB HDD/DOS/Black">
 
-      <a href="#home" class="w3-bar-item w3-button">Lenovo V530s Tower Desktop</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Lenovo V530s Tower Desktop</i></a>
     </div>
 
 
@@ -224,7 +190,7 @@ body, html {
     <div class="w3-col m3">
       <img src="Honor 9A" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Phantom Blue, 3GB RAM, 64GB Storage">
 
-      <a href="#home" class="w3-bar-item w3-button">Honor 9A</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Honor 9A</i></a>
     </div>
 
 
@@ -232,7 +198,7 @@ body, html {
     <div class="w3-col m3">
       <img src="TP-Link Deco E4 Whole Home Mesh Wi-Fi System.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Seamless Roaming(AC1200), Work with Amazon Echo/Alexa and Parent Control Router">
 
-      <a href="#home" class="w3-bar-item w3-button">TP-Link Wi-Fi System</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">TP-Link Wi-Fi System</i></a>
     </div>
 
 
@@ -242,7 +208,7 @@ body, html {
     <div class="w3-col m3">
       <img src="echodot.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="All-new Amazon Echo Dot (4th Gen)">
 
-      <a href="#home" class="w3-bar-item w3-button">Echo Dot</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Echo Dot</i></a>
     </div>
 
 
@@ -266,19 +232,17 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   
 
-<!-- FASHION --!>
+	
+	
+	
+	
+	
+<!-- CLOTHING -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">CLOTHING</span></span> 
   </div>
 </div>
-
-  
-
-
-
-
-
 
 
 
@@ -287,7 +251,7 @@ body, html {
     <div class="w3-col m3">
       <img src="pant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fit Type: Slim,Fabric: Cotton,Lycra Styling">
 
-      <a href="#home" class="w3-bar-item w3-button">Fashion Men's Jeans</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Fashion Men's Jeans</i></a>
     </div>
 
 
@@ -298,7 +262,7 @@ body, html {
     <div class="w3-col m3">
       <img src="toys.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Care Instructions: Machine Wash,Fit Type: Skinny Zip fly with button closure">
 
-      <a href="#home" class="w3-bar-item w3-button">Inkast Denim Co.Jeans</a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Inkast Denim Co.Jeans</a>
     </div>
 
 
@@ -306,7 +270,7 @@ body, html {
     <div class="w3-col m3">
       <img src="bed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fit Type: Regular Fit Fabric: 100% Cotton Style: Hooded Neck Style: Hood">
 
-      <a href="#home" class="w3-bar-item w3-button">Fenoix Men's T-Shirt</a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Fenoix Men's T-Shirt</a>
     </div>
 
 
@@ -316,7 +280,7 @@ body, html {
     <div class="w3-col m3">
       <img src="handbag.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Closure: Lace-Up Shoe Width: Medium Material - Patent Leather">
 
-      <a href="#home" class="w3-bar-item w3-button">Shozie Formal Shoes</a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Shozie Formal Shoes</a>
     </div>
 
 
@@ -342,7 +306,8 @@ body, html {
 
 
 
-
+	
+<!-- Furniture  -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">FURNITURE</span></span>
@@ -350,27 +315,19 @@ body, html {
 </div>
 
 
-
-
-
-<!-- Furniture  -->
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
       <img src="clock.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Product Dimensions: Length (209 cm) ,Width (159.6 cm) ,Height (90.3 cm). Bed size: Queen">
 
-      <a href="#home" class="w3-bar-item w3-button">Riva Queen Bed</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Riva Queen Bed</i></a>
     </div>
 
-
-
-
-    
 
     <div class="w3-col m3">
       <img src="tupperware.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Product Dimensions: Length (212.8 cm) ,Width (165 cm) ,Height (93 cm)">
 
-      <a href="#home" class="w3-bar-item w3-button">Spacewood Queen Size Bed</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Spacewood Queen Size Bed</i></a>
     </div>
 
 
@@ -378,7 +335,7 @@ body, html {
     <div class="w3-col m3">
       <img src="vase.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Product dimension in cm Package 1 = Length (180) Breadth (81.28)height (71.12) sitting height (40.64)">
 
-      <a href="#home" class="w3-bar-item w3-button">Adorn Sofa Gery)</i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">Adorn Sofa Gery)</i></a>
     </div>
 
 
@@ -388,7 +345,7 @@ body, html {
     <div class="w3-col m3">
       <img src="plant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Primary Material: Wood, secondary material :Foam Upholstery Material: Fabric : color : Blue & Black;Easy to use.">
 
-      <a href="#home" class="w3-bar-item w3-button">adorn three seater </i></a>
+      <a href="ShowProductCatalog.jsp" class="w3-bar-item w3-button">adorn three seater </i></a>
     </div>
 
 
@@ -402,125 +359,13 @@ body, html {
 
     
 
-  
-
-  
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
- 
-
-  
 <br><br><br>
 
     
-<h1>
-    <div class="w3-col m3">
-<button class="w3-button w3-padding-large w3-red w3-hover-black" style="margin-top:64px">      TRENDING DEALS</button>
-  </div>
-
-    </div></h1>
-  
-
-  
-
-
-
-<div class="row">
-
-<br><br>
-<div class=" price-col col-lg-4 col-md-6">
-
-<div class="card">
-      <div class="card-header">
-      
-        <h3>Electronics</h3>
-      </div>
-      <div class="card-body">
-        <h2>iPhone 12 Pro max</h2>
-        <p>$1200</p>
-        <p>flat 15% off</p>
-        <p>Get it by tomorrow</p>
-        <p>Free Delivery</p>
-        
-        <button type="button" class="btn btn-lg btn-block btn-danger">Buy now</button>
-      </div>
-    </div>
-  </div>
-
-
-
-<div class="price-col col-lg-4 col-md-12">
-    <div class="card">
-      <div class="card-header">
-        <h3>Home Appliances</h3>
-      </div>
-      <div class="card-body">
-        <h2>Italian Clock</h2>
-        <p>$23</p>
-        <p>limited deal</p>
-        <p>free delivery</p>
-        <p>One left in stock</p>
-        <button type="button" class="btn btn-lg btn-block btn-danger">Buy now</button>
-      </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="price-col col-lg-4 col-md-6 col-sm-12">
-    <div class="card">
-      <div class="card-header">
-        <h3>Fashion</h3>
-      </div>
-      <div class="card-body">
-
-        <h2>Hand bag</h2>
-        <p>$12</p>
-        <p>10% off on MRP</p>
-        <p>Water Repellent</p>
-        <p>Free delivery</p>
-      <button type="button" class="btn btn-lg btn-block btn-danger">Buy now</button>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
 
 
  
@@ -540,7 +385,13 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
+
+
+
+
+
+
+<!--Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
  
   <div class="w3-row w3-padding-32 w3-section">
@@ -564,19 +415,6 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
  
@@ -591,6 +429,13 @@ body, html {
   
 </footer>
  
+
+	
+	
+	
+	
+	
+<!--Script-->	
 <script>
 // Modal Image Gallery
 function onClick(element) {
@@ -610,8 +455,6 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
 }
-
-
 </script>
 
 </body>
