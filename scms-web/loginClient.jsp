@@ -69,7 +69,7 @@ background:#2ecc71;
 </style>
 
 </head>
-<body bgcolor="e6e6e6">
+<body bgcolor="#333">
 	<form class="box" action="loginClientservlet" method="post">	
 	<h1>Login</h1>
 	<input type="text" name="email" placeholder="E-mail">
