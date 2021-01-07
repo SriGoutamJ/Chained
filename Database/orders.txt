@@ -1,0 +1,80 @@
+Email: abc@gmail.com
+Status: Delivered & Paid-for    &emsp; Delivered Date: 2021-01-06
+Name: a
+Address: HSR Layout
+City: Bangalore
+Order Number:1 &emsp; Date: 2021-01-06
+Order Details: 
+Product_Name Quantity Product_Cost Product_Sub-total of each ordered product are as follows:
+Lenovo V530s Tower Desktop,      &emsp; 2,     &emsp;  Rs.24,900.50,     &emsp;  Rs.49,801.00
+Amazon Brand - Inkast Denim Co. Men's Stretch Skinny Jeans,      &emsp; 2,     &emsp;  Rs.600.00,     &emsp;  Rs.1,200.00
+Spacewood Riva Queen Size Wood Bed,      &emsp; 1,     &emsp;  Rs.13,039.00,     &emsp;  Rs.13,039.00
+Total cost: Rs.64,040.00
+*****
+
+Email: abc@gmail.com
+Status: Delivered & Paid-for    &emsp; Delivered Date: 2021-01-06
+Name: a
+Address: HSR Layout
+City: Bangalore
+Order Number:2 &emsp; Date: 2021-01-06
+Order Details: 
+Product_Name Quantity Product_Cost Product_Sub-total of each ordered product are as follows:
+JBL C50HI in-Ear Headphones,      &emsp; 1,     &emsp;  Rs.600.00,     &emsp;  Rs.600.00
+Sigma Lens for Sony E-Mount Mirrorless Cameras,      &emsp; 1,     &emsp;  Rs.27,000.00,     &emsp;  Rs.27,000.00
+Green Soul Monster Ultimate Series Multi-Functional Chair,      &emsp; 1,     &emsp;  Rs.18,990.00,     &emsp;  Rs.18,990.00
+Total cost: Rs.46,590.00
+*****
+
+Email: def@gmail.com
+Status: Processing order number:3
+Name: d
+Address: HBR Layout
+City: Bangalore
+Order Number:3 &emsp; Date: 2021-01-06
+Order Details: 
+Product_Name Quantity Product_Cost Product_Sub-total of each ordered product are as follows:
+Shozie Men's Formal Shoes,      &emsp; 1,     &emsp;  Rs.900.00,     &emsp;  Rs.900.00
+Honor 9A,      &emsp; 2,     &emsp;  Rs.12,000.00,     &emsp;  Rs.24,000.00
+Adorn India Orlando Fabric L Shape Sofa (Dark Grey & Light Gery),      &emsp; 1,     &emsp;  Rs.32,999.00,     &emsp;  Rs.32,999.00
+Total cost: Rs.57,899.00
+*****
+
+Email: pqr@gmail.com
+Status: Delivered & Paid-for    &emsp; Delivered Date: 2021-01-06
+Name: p
+Address: banshankari
+City: Bangalore
+Order Number:4 &emsp; Date: 2021-01-06
+Order Details: 
+Product_Name Quantity Product_Cost Product_Sub-total of each ordered product are as follows:
+Lenovo V530s Tower Desktop,      &emsp; 2,     &emsp;  Rs.24,900.50,     &emsp;  Rs.49,801.00
+Total cost: Rs.49,801.00
+*****
+
+Email: abc@gmail.com
+Status: Processing order number:5
+Name: a
+Address: HSR Layout
+City: Bangalore
+Order Number:5 &emsp; Date: 2021-01-06
+Order Details: 
+Product_Name Quantity Product_Cost Product_Sub-total of each ordered product are as follows:
+Fenoix Men's Regular Fit T-Shirt,      &emsp; 1,     &emsp;  Rs.400.00,     &emsp;  Rs.400.00
+Urbano Fashion Men's Slim Fit Jeans,      &emsp; 1,     &emsp;  Rs.800.00,     &emsp;  Rs.800.00
+Sigma Lens for Sony E-Mount Mirrorless Cameras,      &emsp; 1,     &emsp;  Rs.27,000.00,     &emsp;  Rs.27,000.00
+Total cost: Rs.28,200.00
+*****
+
+Email: def@gmail.com
+Status: Processing order number:6
+Name: d
+Address: HBR Layout
+City: Bangalore
+Order Number:6 &emsp; Date: 2021-01-06
+Order Details: 
+Product_Name Quantity Product_Cost Product_Sub-total of each ordered product are as follows:
+Shozie Men's Formal Shoes,      &emsp; 1,     &emsp;  Rs.900.00,     &emsp;  Rs.900.00
+Total cost: Rs.900.00
+*****
+

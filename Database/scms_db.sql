@@ -1,8 +1,10 @@
--- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `scms_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `scms_db`;
+-- MySQL dump 10.13  Distrib 8.0.22, for Linux (x86_64)
 --
 -- Host: localhost    Database: scms_db
 -- ------------------------------------------------------
--- Server version	8.0.22
+-- Server version	8.0.22-0ubuntu0.20.04.3
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -16,31 +18,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `activeclients`
---
-
-DROP TABLE IF EXISTS `activeclients`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `activeclients` (
-  `email_id` varchar(150) DEFAULT NULL,
-  `order_date` date DEFAULT NULL,
-  `order_no` int DEFAULT NULL,
-  `status` varchar(50) DEFAULT NULL,
-  `delivered_date` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `activeclients`
---
-
-LOCK TABLES `activeclients` WRITE;
-/*!40000 ALTER TABLE `activeclients` DISABLE KEYS */;
-/*!40000 ALTER TABLE `activeclients` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `all_items`
 --
 
@@ -48,11 +25,11 @@ DROP TABLE IF EXISTS `all_items`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `all_items` (
-  `prductid` varchar(45) DEFAULT NULL,
-  `productname` varchar(150) DEFAULT NULL,
-  `description` varchar(250) DEFAULT NULL,
-  `price` decimal(10,2) DEFAULT NULL,
-  `category` varchar(45) DEFAULT NULL
+  `productid` varchar(45) NOT NULL,
+  `productname` varchar(150) NOT NULL,
+  `description` varchar(250) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `category` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -74,13 +51,13 @@ DROP TABLE IF EXISTS `clientdetails`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `clientdetails` (
-  `email` varchar(150) DEFAULT NULL,
-  `password` varchar(150) DEFAULT NULL,
-  `fname` varchar(100) DEFAULT NULL,
+  `email` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  `fname` varchar(100) NOT NULL,
   `lname` varchar(100) DEFAULT NULL,
-  `address` varchar(250) DEFAULT NULL,
-  `city` varchar(50) DEFAULT NULL,
-  `contactNo` mediumtext
+  `address` varchar(250) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `contactNo` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -90,31 +67,34 @@ CREATE TABLE `clientdetails` (
 
 LOCK TABLES `clientdetails` WRITE;
 /*!40000 ALTER TABLE `clientdetails` DISABLE KEYS */;
-INSERT INTO `clientdetails` VALUES ('abc@gmail.com','xyz','a','bc','HSR Layout','Bangalore','923456781'),('def@gmail.com','uvw','d','ef','HBR Layout','Bangalore','923456481'),('hij@gmail.com','rst','h','ij','Park Layout','Bangalore','9233446781'),('klm@gmail.com','opq','k','lm','Tusk Layout','Bangalore','924556781'),('opq@gmail.com','lmn','o','pq','MSR Layout','Bangalore','923765781');
+INSERT INTO `clientdetails` VALUES ('abc@gmail.com','xyz','a','bc','HSR Layout','Bangalore','9234596781'),('def@gmail.com','uvw','d','ef','HBR Layout','Bangalore','9234564813'),('ghi@gmail.com','rst','g','hi','Park Layout','Bangalore','9334467819'),('jkl@gmail.com','opq','j','kl','Tusk Layout','Bangalore','9245567812'),('mno@gmail.com','lmn','m','no','MSR Layout','Bangalore','9237657481'),('pqr@gmail.com','ijk','p','qr','banshankari','Bangalore','9213567890');
 /*!40000 ALTER TABLE `clientdetails` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `clientlist`
+-- Table structure for table `clients`
 --
 
-DROP TABLE IF EXISTS `clientlist`;
+DROP TABLE IF EXISTS `clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `clientlist` (
-  `email` varchar(200) DEFAULT NULL,
-  `password` varchar(200) DEFAULT NULL
+CREATE TABLE `clients` (
+  `email_id` varchar(150) NOT NULL,
+  `order_date` date NOT NULL,
+  `order_no` int NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `delivered_date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `clientlist`
+-- Dumping data for table `clients`
 --
 
-LOCK TABLES `clientlist` WRITE;
-/*!40000 ALTER TABLE `clientlist` DISABLE KEYS */;
-INSERT INTO `clientlist` VALUES ('abc@gmail.com','xyz'),('def@gmail.com','uvw'),('hij@gmail.com','rst'),('klm@gmail.com','opq'),('opq@gmail.com','lmn');
-/*!40000 ALTER TABLE `clientlist` ENABLE KEYS */;
+LOCK TABLES `clients` WRITE;
+/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+INSERT INTO `clients` VALUES ('abc@gmail.com','2021-01-06',1,'Delivered','2021-01-06'),('abc@gmail.com','2021-01-06',2,'Delivered','2021-01-06'),('def@gmail.com','2021-01-06',3,'Processing',NULL),('pqr@gmail.com','2021-01-06',4,'Delivered','2021-01-06'),('abc@gmail.com','2021-01-06',5,'Processing',NULL),('def@gmail.com','2021-01-06',6,'Processing',NULL);
+/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -130,7 +110,7 @@ CREATE TABLE `dealerdetails` (
   `name` varchar(150) DEFAULT NULL,
   `address` varchar(250) DEFAULT NULL,
   `city` varchar(150) DEFAULT NULL,
-  `contactno` mediumtext
+  `contactno` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -140,7 +120,7 @@ CREATE TABLE `dealerdetails` (
 
 LOCK TABLES `dealerdetails` WRITE;
 /*!40000 ALTER TABLE `dealerdetails` DISABLE KEYS */;
-INSERT INTO `dealerdetails` VALUES ('1','Electronics','John','HSR Layout','Bangalore','12345667899'),('1','Clothing','Siri','HBR Layout','Bangalore','99876654321'),('1','Furniture','Tux','MSR nagar','Bangalore','67899654321');
+INSERT INTO `dealerdetails` VALUES ('1','Electronics','John','HSR Layout','Bangalore','1234566789'),('2','Clothing','Siri','HBR Layout','Bangalore','9987654321'),('3','Furniture','Tux','MSR nagar','Bangalore','6789954321');
 /*!40000 ALTER TABLE `dealerdetails` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -156,7 +136,7 @@ CREATE TABLE `logistics` (
   `name` varchar(150) DEFAULT NULL,
   `address` varchar(250) DEFAULT NULL,
   `city` varchar(75) DEFAULT NULL,
-  `contact` mediumtext
+  `contact` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -166,7 +146,7 @@ CREATE TABLE `logistics` (
 
 LOCK TABLES `logistics` WRITE;
 /*!40000 ALTER TABLE `logistics` DISABLE KEYS */;
-INSERT INTO `logistics` VALUES ('1','FedEx','Banaswadi','Bangalore','123654789'),('1','Ryder','Hosur','Bangalore','4536765778'),('1','FedEx','Brigade road','Bangalore','5859403889');
+INSERT INTO `logistics` VALUES ('1','FedEx','Banaswadi','Bangalore','1236594789'),('2','Ryder','Hosur','Bangalore','4536765778'),('3','FedEx','Brigade road','Bangalore','5859403889');
 /*!40000 ALTER TABLE `logistics` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -191,10 +171,6 @@ LOCK TABLES `password` WRITE;
 INSERT INTO `password` VALUES ('pass');
 /*!40000 ALTER TABLE `password` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'scms_db'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -205,4 +181,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-04 16:15:57
+-- Dump completed on 2021-01-07 12:16:29
