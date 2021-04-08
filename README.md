@@ -11,3 +11,5 @@ Business Owners can feed in the data of the various products and services offere
 
 Tools Used: 
 MVC architecture implemented using Java(JSP, Servlets, DAO files), HTML, CSS, and MySQL.
+
+P.S: Please do go through the Documentation.pdf in Documentation folder of the repository for an in depth understanding of the project and labelled UI ScreenShots
