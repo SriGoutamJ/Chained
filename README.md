@@ -1,5 +1,5 @@
 # Chained
-A Dynamic Web Application which acts as an e-commerce platform-cum-dropshipping application which facilitates business owners and clients to conduct transactions of services and goods while all the underlying processes are meticulously managed under an aesthetic UI with password protected account access.
+A Dynamic Web Application which acts as an e-commerce platform-cum-supply chain management application which facilitates business owners and clients to conduct transactions of services and goods while all the underlying processes are meticulously managed under an aesthetic UI with password protected account access.
 
 Using the application,
 
